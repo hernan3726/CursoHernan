@@ -5,6 +5,10 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+  if (x>y) {
+    return x;
+  } return y ;
+   
 }
 
 function mayoriaDeEdad(edad) {
@@ -24,7 +28,19 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-}
+  if (status===1) {
+    return "Online";
+  } else if (status===2) {
+    return "Away";
+  } 
+    return "Offline"
+  }  
+
+  
+
+     
+
+
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
@@ -33,6 +49,13 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  if (idioma==="aleman"){
+    return "Guten Tag!";
+  } else if (idioma==="mandarin"){
+    return "Ni Hao!";
+  } else if (idioma==="ingles") {
+    return "Hello!";
+  } return "Hola";
 }
 
 function colors(color) {
@@ -43,6 +66,7 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  
 }
 
 function esDiezOCinco(numero) {
